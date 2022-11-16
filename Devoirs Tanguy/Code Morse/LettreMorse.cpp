@@ -2,7 +2,7 @@
 
 LettreMorse::LettreMorse(){};
 
-void LettreMorse::ConversionMorse(int lettre){
+void LettreMorse::ConversionMorse(char lettre){
 
   switch (lettre){
     case 'a':

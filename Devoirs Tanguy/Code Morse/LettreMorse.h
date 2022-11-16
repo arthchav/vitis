@@ -6,7 +6,7 @@ class LettreMorse{ //permet de convertir les lettres en morses
 
     public:
         LettreMorse();
-        void ConversionMorse(int lettre); //Convertie la lettre en morse
+        void ConversionMorse(char lettre); //Convertie la lettre en morse
         const char* morse; //Enregistre la traduction en morse
 
 }; 
