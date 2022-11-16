@@ -20,7 +20,7 @@ void loop() {
 
   if (Serial.available() > 0) {
     
-    incomingByte = Serial.read();
+    mot = Serial.read();
 
     LM.ConversionMorse(mot);
 
