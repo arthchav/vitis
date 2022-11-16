@@ -83,36 +83,6 @@ void LettreMorse::ConversionMorse(int lettre){
     case 'z':
         morse = "--..";
         break;
-    case '1':
-        morse = ".----";
-        break;
-    case '2':
-        morse = "..---";
-        break;
-    case '3':
-        morse = "...--";
-        break;
-    case '4':
-        morse = "....-";
-        break;
-    case '5':
-        morse = ".....";
-        break;
-    case '6':
-        morse = "-....";
-        break;
-    case '7':
-        morse = "--...";
-        break;
-    case '8':
-        morse = "---..";
-        break;
-    case '9':
-        morse = "----.";
-        break;
-    case '0':
-        morse = "-----";
-        break;
     default:
         morse = "";
         break;
