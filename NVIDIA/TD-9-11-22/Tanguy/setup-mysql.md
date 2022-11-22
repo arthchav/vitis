@@ -65,9 +65,11 @@ mysql -u tanguy -p
 Enter password:
 
 ```
+
 ```shell
 mysql>show databases;
 ```
+
 ![image](/NVIDIA/TD-9-11-22/Tanguy/Images/databases.png)
 
 ```shell
@@ -77,6 +79,7 @@ mysql>show tables;
 
 mysql> exit
 ```
+
 ![image](/NVIDIA/TD-9-11-22/Tanguy/Images/tables.png)
 
 # Créer le script:
@@ -84,3 +87,4 @@ mysql> exit
 ```shell
 vim dump-database.sh
 ```
+
