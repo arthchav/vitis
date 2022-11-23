@@ -13,11 +13,16 @@ sudo mysql
 mysql>SELECT user,authentication_string,plugin,host FROM mysql.user;
 
 mysql>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'TaNg2001@#!';
+```
+
+Pour le premier mot de passe j'ai eu une erreur: MySQL ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+
+```shell
+mysql> SHOW VARIABLES LIKE 'validate_password%';
 
 mysql>exit
 
 sudo mysql_secure_installation
-
 ```
 
 ![image](/NVIDIA/TD-9-11-22/Tanguy/Images/mysql%20secure%20installation.png)
