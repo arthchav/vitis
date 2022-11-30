@@ -13,6 +13,8 @@ void LettreMorse::ConversionMorse(){
   Serial.println("Ecris le mot que tu veux traduire:\n");       //on demande à l'utilisateur d'écrire le mot qu'il veut traduire
   Serial.println(mot);      //on affiche le mot entré par l'utilisateur
 
+  mot.toLowerCase();     //on met le mot en minuscule
+
   Serial.println("La traduction est:\n");       //on affiche un message à l'utilisateur
 
   for (int i = 0; i < mot.length(); i++){       //boucle qui parcourt le mot entré par l'utilisateur
