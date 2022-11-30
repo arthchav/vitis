@@ -1,6 +1,6 @@
 #include "LettreMorse.hpp"
 
-LettreMorse::LettreMorse(){};
+LettreMorse::LettreMorse(){}; 
 
 void LettreMorse::ConversionMorse(){  //Convertit un mot en morse
 
