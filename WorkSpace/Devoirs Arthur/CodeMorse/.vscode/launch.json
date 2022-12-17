@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/PIKJY DATA/One Drive/OneDrive/Documents/GitHub/vitis/Devoirs Tanguy/Code Morse",
-      "program": "c:/PIKJY DATA/One Drive/OneDrive/Documents/GitHub/vitis/Devoirs Tanguy/Code Morse/build/Debug/outDebug",
+      "cwd": "c:/ONE DRIVE/OneDrive - Université Nice Sophia Antipolis/Bureau Laptop/CodeMorse",
+      "program": "c:/ONE DRIVE/OneDrive - Université Nice Sophia Antipolis/Bureau Laptop/CodeMorse/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
