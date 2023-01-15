@@ -1,10 +1,10 @@
 # Last video : 
 
-https://youtu.be/ngQbVwTEOPs
+https://youtu.be/JAuiAB0MdsA
 
 ### Playlist : 
 
-https://www.youtube.com/playlist?list=PLRQ-Vj44Z8fejHV95dyqV7iqJ9uM6nV9p
+https://youtube.com/playlist?list=PLRQ-Vj44Z8fejHV95dyqV7iqJ9uM6nV9p
 
 
 
