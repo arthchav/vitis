@@ -55,13 +55,10 @@ UUID=03d60d39-967e-473e-b710-2687941e1d0a /home ext4 defaults 0 2
 ```
 
 Finalement on redémarre la carte et /home est désormais sur la carte SD
-
-
-
-On installe maintenant nvidia-container:
 ```shell
-sudo apt install nvidia-container
+sudo shutdown -r now
 ```
+
 # Utiliser les images docker fournies par Nvidia:
 
 Installer le package nvidia-container, attention à bien être connecté en wifi avec la carte(voir annexe):
@@ -72,4 +69,5 @@ On modifie le fichier /etc/docker/daemon.json en ajoutant:
 ```shell
 "data-root":"/mnt/sd_card"
 ```
+
 
