@@ -1,5 +1,13 @@
 # Prise en main de la carte jetson nano:
 
+<p align="center">
+  <img width="50%" src="https://france.scc.com/wp-content/uploads/2021/02/nvidia-logo-horiz-rgb-1c-wht-for-screen-002-png-800x276.png" />
+</p>
+
+<p align="center">
+  <img width="20%" src="https://www.nvidia.com/content/dam/en-zz/Solutions/intelligent-machines/jetson-store/nvidia-jetson-nano-dev-kit-2c50-P@2x.png" />
+</p>
+
 Connexion à la carte jetson nano:
 ```shell
  ssh vitis@192.168.55.1
