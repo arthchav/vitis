@@ -1,11 +1,3 @@
-## Explication du code pilote automatique
-
-Ce programme est fait pour un robot équipé de 4 moteurs, d'un capteur de distance à ultrasons et de deux capteurs infrarouges. Il utilise une carte Arduino pour contrôler les moteurs et lire les données des capteurs.
-Le robot avance constamment sauf si il y a un obstacle devant ou sur les côtés.
-
-Les variables déclarées en haut du code incluent "duree" pour stocker la durée de l'écho du signal ultrasonique, "distance" pour stocker la distance mesurée, "V_avant" pour stocker la valeur à partir de laquelle le robot avance, et "V_arriere" pour stocker la valeur à partir de laquelle le robot recule.
-
-```shell
 // Variables utiles dans la suite du code
 
 long duree;   // durée de l'echo ultrason   
@@ -13,12 +5,6 @@ int distance; // variable qui stock la distance ultrason
 
 int V_avant=20; // Valeur à partir de laquelle le robot avance 
 int V_arriere=19; //Valeur à partir de laquelle le robot recul 
-
-```
-
-Ensuite, les broches de l'Arduino sont nommées pour une meilleure lisibilité du code. Les broches du module L298N sont associées à des broches de l'Arduino, ainsi que les broches du capteur ultrason et des capteurs infrarouges.
-
-```shell
 
 // On commence par nommé chaque borne pour un code lisible :
 
@@ -35,11 +21,9 @@ Ensuite, les broches de l'Arduino sont nommées pour une meilleure lisibilité d
 
 #define PinCapteurIR1   52       // OUT du capteur IR 1 (Gauche)
 #define PinCapteurIR2   53       // OUT du capteur IR 2 (Droite)
-```
 
-Dans la fonction setup(), les broches sont configurées en mode "entrée" ou "sortie" en fonction de leur utilisation. On note la présence d'un potentiomètre qui gère la vitesse des moteurs dans le robot. 
 
-```shell
+
 void setup() {
 
 pinMode(trigPin, OUTPUT); // Configuration du port du Trigger comme une SORTIE
@@ -62,10 +46,7 @@ pinMode(echoPin, INPUT);  // Configuration du port de l'Echo  comme une ENTREE
   pinMode (PinCapteurIR2, INPUT);
 
 }
-```
-Dans la fonction loop(), un signal ultrason est émis et la distance des obstacles est calculée en utilisant la durée de l'echo. Les données des capteurs infrarouges sont également lues pour détecter les obstacles à gauche et à droite. En fonction de ces données, le robot peut tourner à gauche ou à droite pour éviter les obstacles. Sinon, il avance constamment.
 
-```shell
 void loop() {
 
 
@@ -113,12 +94,10 @@ if (distance > V_avant){
       stop_moteur(); // Lorque l'on est entre les distances de marche avant et arrière pour que le robot s'arrête devant l'obstacle 
 }
 
+ 
+
 
 }
-```
-Il y a des fonctions définies pour les actions de base.
-
-```shell
 
 void avant() {
     // Configuration du L298N en "marche avant", pour le moteur connecté au pont B. Selon sa table de vérité, il faut que :
@@ -162,16 +141,6 @@ void droite()
     digitalWrite(PinDROITE_recule, HIGH);
 }
 
-void stop_moteur() {
-
-  analogWrite(borneENB, 0); //Stop les moteurs 
-  analogWrite(borneENA, 0);       
-
-}
-
-```
-Enfin une fonction qui permet de lire la vitesse à laquelle les moteurs doivent tourner à chaque tour de boucle (void loo()).
-```shell
 void lancerRotationMoteurPont() {
 
     int vitesse = analogRead(A1);  // lit la valeur du potentiomètre
@@ -183,4 +152,10 @@ void lancerRotationMoteurPont() {
     analogWrite(borneENA, vitesse);     
 
 }
-```
+
+void stop_moteur() {
+
+  analogWrite(borneENB, 0); //Stop les moteurs 
+  analogWrite(borneENA, 0);       
+
+}
