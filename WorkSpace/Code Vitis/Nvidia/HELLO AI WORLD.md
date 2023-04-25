@@ -134,3 +134,17 @@ print("image is recognized as '{:s}' (class #{:d}) with {:f}% confidence".format
 $ ./my-recognition.py polar_bear.jpg
 image is recognized as 'ice bear, polar bear, Ursus Maritimus, Thalarctos maritimus' (class #296) with 99.999878% confidence
 ```
+
+# Running the Live Camera Recognition Demo
+
+Faire le Tuto 'Stream Vidéo'
+
+```
+imagenet --bitrate=1000000 --output-codec=h264 /dev/video0 rtp://172.20.10.2:9306
+```
+
+```
+detectnet --bitrate=1000000 --output-codec=h264 /dev/video0 rtp://172.20.10.2:9306
+```
+
+Lancer la vidéo sur VLC et régalez-vous!

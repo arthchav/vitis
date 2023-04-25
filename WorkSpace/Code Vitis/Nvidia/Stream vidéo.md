@@ -45,10 +45,12 @@ Lancer la diffusion vidéo de la caméra:
 video-viewer --bitrate=1000000 --output-codec=h264 /dev/video0 rtp://172.20.10.2:9306
 ```
 
-Lancer la vidéo sur son prdinateur avec VLC:
+Lancer la vidéo sur son ordinateur avec VLC:
 
 ```
 /Applications/VLC.app/Contents/MacOS/VLC stream_jetson.sdp
+
+
 ```
 
 
