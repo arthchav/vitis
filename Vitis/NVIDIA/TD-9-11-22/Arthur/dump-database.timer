@@ -1,8 +1,0 @@
-[Unit]
-Description=10min
-
-[Timer]
-OnUnitActiveSec=10min
-
-[Install]
-WantedBy=timers.target

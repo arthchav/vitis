@@ -1,0 +1,8 @@
+[Unit]
+Description=Sauvegarde_base_donnée 
+
+[Service]
+ExecStart=/home/arthur/dump-database.sh
+
+[Install]
+WantedBy=multi-user.target

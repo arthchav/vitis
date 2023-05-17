@@ -1,0 +1,8 @@
+[Service]
+Description= Sauvegarde database
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/home/TdBDD/dump-database.sh
+
+[Install]
+WantedBy=multi-user.target

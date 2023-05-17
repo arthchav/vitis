@@ -1,0 +1,10 @@
+[Unit]
+Description=lancement toutes les 10 min
+
+[Timer]
+OnCalendar=*:0/10
+AccuracySec=1s
+Unit=backup.Service
+
+[Install]
+WantedBy=timers.target
